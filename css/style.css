@@ -1,0 +1,295 @@
+body{
+    background: #F3F5FC;
+}
+
+textarea{
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+
+}
+
+.codifi{
+    display: block;
+
+    position: relative;
+    width: 40%;
+    height: 1000px;
+    left: 4vw;
+
+    border: red;
+}
+
+.entrada{
+    width: 90%;
+    height: max-content;
+    margin: 7vw 1vw;
+
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background: #F3F5FC;
+    border: none;
+
+    color: #0A3871;
+}
+
+.frame1{
+    padding: 0px;
+    width: 229px;
+    height: 18px;   
+}
+
+.mensajeframe1{
+    width: 205px;
+    height: 18px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #495057;
+
+    opacity: 0.8;
+
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.mensajeframe1:before{
+    content: "\1F6C8";
+}
+
+.frame3{
+    display: inline-flex;
+    padding: 0px;
+    gap: 24px;
+    height: 67px;
+    justify-content: space-between;
+}
+
+.encrip{
+    width: 328px;
+    height: 67px;
+
+
+    background: #0A3871;
+    border-radius: 24px;
+
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+.descrip{
+    padding: 24px;
+
+    width: 328px;
+    height: 67px;
+
+
+    background: #D8DFE8;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+/*--------------zona del resultado---------------*/
+.decodi{
+    position: absolute;
+    width: 25%;
+    height: 900px;
+    top: 40px;
+    right: 40px;
+
+    background: #FFFFFF;
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    align-items: center;
+}
+
+#resultado{
+    visibility: hidden;
+    width: 90%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    margin: 1vw;
+}
+
+.munheco{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 32px;
+    top: 283px;
+    visibility: visible;
+}
+
+.frame {
+    position: relative;
+    display: block;
+    padding: 0px;
+    left: 32px;
+    top: 619px;
+    visibility: visible;
+}
+
+.botonCopiar{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    justify-content: center;
+
+    position: absolute;
+    width: 300px;
+    height: 67px;
+    left: 32px;
+    bottom: 2em;
+
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    visibility: hidden;
+}
+
+.mensaje{
+    width: 336px;
+    height: 58px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    text-align: center;
+
+    color: #343A40;
+
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.mensaje2{
+    width: 336px;
+    height: 48px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    text-align: center;
+
+    color: #495057;
+
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+@media screen and (max-width: 1444px) /*and (min-width: 768px)*/  {
+
+    .codifi{
+        width: 100%;
+    }
+
+    .entrada{
+        margin: 4em 1vw;
+    }
+
+    .frame3{
+        width: 90%;
+    }
+
+    .decodi{
+        width: 90%;
+        height: auto;
+        top: 1001px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .munheco{
+        visibility: hidden;
+    }
+
+    .frame{
+        position: relative;
+        width: 100%;
+        top: 20px;
+    }
+
+    .mensaje{
+        width: auto;
+    }
+
+    .mensaje2{
+        width: auto;
+    }
+    
+    .botonCopiar{
+        position: relative;
+        bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .frame1{
+        width: 90%;
+    }
+
+    .mensajeframe1{
+        margin: 0 auto;
+    }
+
+    .frame3{
+        width: 80%;
+        display: grid;
+        margin: 0 auto;
+    }
+
+    .decodi{
+        position: relative;
+        height: fit-content;
+        top: 0;
+        margin: 0 auto;
+    }
+
+    .frame{
+        position: relative;
+        top: 0;
+        margin: 0 auto;
+        left: 0;
+    }
+
+    .botonCopiar{
+        position: absolute;
+        width: 80%;
+        left: auto;
+    }
+}

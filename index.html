@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges ONE</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <img src="imagenes/Logo.png" alt="" class="logo">
+        <div class="codifi">
+            <textarea name="" id="entrada" cols="30" rows="10" class="entrada" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="frame1">
+                <p class="mensajeframe1">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="frame3">
+                <input type="button" id="enciptar" value="Encriptar" class="encrip" onclick="encriptar()">
+                <input type="button" id="desencriptar" value="Desencriptar" class="descrip" onclick="desencriptar()">
+            </div>
+        </div>
+        <div class="decodi">
+            <p name="" id="resultado" cols="30" rows="10" ></p>
+            <img src="imagenes/Muñeco.png" alt="" class="munheco" id="munheco">
+            <div class="frame" id="noencontrado">
+                <h1 class="mensaje">Ningún mensaje fue encontrado</h1>
+                <p class="mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <input type="button" value="Copiar" class="botonCopiar" id="copiar" onclick="copiar()">
+        </div>
+    </main>
+    <script src="js/javascrip.js"></script>
+</body>
+</html>
